@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Drishti | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf6fc;--surface:#fff;--ink:#2a1736;--muted:#6a5878;--line:#e3d7ec;--accent:#b3265f;--accent-ink:#fff;--mark:#d9c7f7;--ph:#fff3c9;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a1022;--surface:#251833;--ink:#f3eaf8;--muted:#b9a7c8;--line:#3a2a4b;--accent:#ff7aa8;--accent-ink:#2a0f1a;--mark:#5a3f8c;--ph:#4a3d12;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1a1022;--surface:#251833;--ink:#f3eaf8;--muted:#b9a7c8;--line:#3a2a4b;--accent:#ff7aa8;--accent-ink:#2a0f1a;--mark:#5a3f8c;--ph:#4a3d12;color-scheme:dark}
+html{scroll-padding-top:calc(70px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.7 Outfit,system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+h1,h2,h3{font-family:Syne,Georgia,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--bg);border-bottom:1px solid var(--line)}
+nav{max-width:980px;margin:0 auto;padding:.85rem 1.25rem;display:flex;gap:1.1rem;align-items:center;flex-wrap:wrap}
+nav .brand{font:800 1.3rem Syne,sans-serif;margin-right:auto;text-decoration:none;color:var(--accent)}
+nav a{text-decoration:none;font-size:.95rem;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+main{max-width:980px;margin:0 auto;padding:0 1.25rem}
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+section.hero{border-top:0;padding:5rem 0 4rem}
+.hello{color:var(--muted);margin:0 0 1rem}
+.hero h1{font-size:clamp(3.5rem,16vw,9.5rem);font-weight:800;letter-spacing:-.04em;line-height:.9;color:var(--accent)}
+.role{font:600 1.4rem Syne,sans-serif;margin:1.5rem 0 .5rem}
+.lead{max-width:54ch;color:var(--muted);margin:0 0 2rem}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:.8rem 1.5rem;border-radius:12px;font-weight:600;text-decoration:none}
+.btn:hover{filter:brightness(1.08)}
+.row{display:grid;gap:1rem;grid-template-columns:minmax(0,1fr)}
+@media (min-width:760px){.row{grid-template-columns:200px minmax(0,1fr);gap:2.5rem}}
+h2{font-size:1.7rem;font-weight:800}
+p{max-width:62ch;margin:0 0 1rem}
+.ph{background:var(--ph);padding:0 .3em;border-radius:4px}
+.edu{list-style:none;margin:0;padding:0}
+.edu li{padding:0 0 1.5rem}
+.edu h3{font-size:1.25rem}
+.edu .where{color:var(--muted);margin:.2rem 0 0}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;list-style:none;margin:0;padding:0}
+.chips li{background:var(--mark);color:var(--ink);border-radius:999px;padding:.4rem 1.1rem;font-weight:500}
+.project{padding:0 0 1.5rem}
+.project h3{font-size:1.25rem;margin-bottom:.3rem}
+.project p{color:var(--muted);margin:0}
+.contact-list{list-style:none;margin:0;padding:0}
+.contact-list li{padding:.3rem 0}
+.contact-list b{display:inline-block;min-width:6rem}
+footer{max-width:980px;margin:0 auto;padding:1.5rem 1.25rem 2.5rem;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+<nav aria-label="Main">
+<a class="brand" href="#home">Drishti.</a>
+<a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#hobbies">Hobbies</a><a href="#contact">Contact</a>
+</nav>
+</header>
+<main>
+<section class="hero" id="home">
+<p class="hello">Hello, and welcome to my portfolio.</p>
+<h1>Drishti</h1>
+<p class="role">MCA student</p>
+<p class="lead">I enjoy learning new skills, building useful projects and growing a little every day. I’m looking for opportunities where I can apply what I’ve learned and keep improving.</p>
+<a class="btn" href="#contact">Get in touch</a>
+</section>
+
+<section id="about"><div class="row"><h2>About me</h2><div>
+<p>Hi, I’m Drishti, from Punjab. I completed my BCA in 2026 and I’m currently pursuing my Master of Computer Applications (MCA) at Rayat Bahra Professional University.</p>
+<p>I’m interested in technology, web and software projects, and learning new things. My goal is to build my skills step by step and start a successful career in IT.</p>
+</div></div></section>
+
+<section id="education"><div class="row"><h2>Education</h2>
+<ol class="edu">
+<li><h3>Master of Computer Applications (MCA)</h3><p class="where">Rayat Bahra Professional University · Currently pursuing</p></li>
+<li><h3>Bachelor of Computer Applications (BCA)</h3><p class="where">Completed 2026 · CGPA 8.67</p></li>
+<li><h3>12th (Senior Secondary)</h3><p class="where">Completed 2022 · 84%</p></li>
+</ol></div></section>
+
+<section id="skills"><div class="row"><h2>Skills</h2>
+<ul class="chips"><li>Computer fundamentals</li><li>Web development basics</li><li>Database basics</li><li>Moodle</li><li>Problem solving</li></ul>
+</div></section>
+
+<section id="projects"><div class="row"><h2>Projects</h2><div>
+<article class="project"><h3>Student Fee Management System</h3><p>A system to manage student fee records, payments and dues in an organized way.</p></article>
+<article class="project"><h3>Computer Organization Course on Moodle</h3><p>An online course for Computer Organization set up on the Moodle learning platform.</p></article>
+</div></div></section>
+
+<section id="hobbies"><div class="row"><h2>Hobbies</h2>
+<p>Reading books, learning new skills and exploring technology.</p>
+</div></section>
+
+<section id="contact"><div class="row"><h2>Contact me</h2>
+<ul class="contact-list">
+<li><b>Email</b> <a href="mailto:sdrishti266@gmail.com">sdrishti266@gmail.com</a></li>
+<li><b>Location</b> Nawanshahr, Punjab, India</li>
+</ul></div></section>
+</main>
+<footer>© 2026 Drishti. All rights reserved.</footer>
+</body>
+</html>
